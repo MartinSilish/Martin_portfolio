@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Portfolio</title>
+
+    <!--------------------------------- Font Awesome Library --------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!--------------------------------- Nunito Google Font --------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!--------------------------------- External CSS --------------------------------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!------------------- Header Section ------------------->
+        <header>
+            <div class="logo">
+                <a href="./index.html" title="Home">
+                    <h2 class="hero-name-title">Martin</h2>
+                </a>
+            </div>
+
+            <nav class="nav-links">
+                
+                <ul id="menu-items">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()" title="Close"></i>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="" title="View GitHub Repository"
+                            target="_blank">View Source</a></li>
+                    <li><a href="./assets/Resume/Martin-Resume.pdf" download
+                            class="download-resume-mobile-view">Download Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn">
+                <a href="./assets/Resume/Martin-Resume.pdf" download class="hero-btn hide-mobile-view">Download CV</a>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" title="Show Menu"></i>
+        </header>
+
+        <section class="hero-detail">
+
+            <div class="hero-img">
+            <img src="./assets/Img/Hero_2.JPG" alt="Martin Image">
+            </div>
+            <h1 class="hero-name">Martin <span>Silish</span></h1>
+            <div class="role">
+                <p class="hero-role">A Passionate <span>Full Stack Developer</span></p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/martinsilish01/" title="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+
+                <a href="https://github.com/MartinSilish" title="GitHub" target="_blank"> <i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/mr_o.m.e.g.a/" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+
+    </div>
+    <!------------------- End of Header Section ------------------->
+
+    <!------------------- About Section ------------------->
+    <section class="about" id="about">
+
+        <div class="about-section-image">
+            <img src="./assets/Img/profile-pic1.png" alt="Martin Image">
+        </div>
+
+        <div class="division about-me">
+            <span class="discover">Discover</span>
+            <h3>About <span>Me</span></h3>
+            <p>
+                I'm Martin, a dedicated full-stack developer based in the Thoothukudi of TamilNadu. I am
+                currently engaged as an Self Learn Full Stack Engineer from Youtube.
+                 I firmly believe in my ability to craft exceptional and premium websites.
+            </p>
+            <div class="details">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="detail email">
+                        Email:
+                    </span>
+                    <a href="mailto:mushkirmohamed@gmail.com">martinsilish@gmail.com</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="detail phone">
+                        Phone:
+                    </span>
+                    <a href="tel:8424942001">+918424942001</a>
+                    <a href="https://wa.me/918424942001">
+                        <i class="fa-brands fa-whatsapp" style="color: #45e01a;"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="detail address">
+                        Address:
+                    </span>
+                    <span class="address-location">Meignanapuram,Thoothukudi</span>
+                </div>
+            </div>
+
+            <div class="btn-actions">
+                <a href="https://martinsilish.github.io/Resume/" target="_blank" class="hero-btn explore"><i
+                        class="fa-solid fa-eye"></i> Explore
+                    Resume </a>
+
+                <a href="./assets/Resume/Martin-Resume.pdf" download class="hero-btn"> <i
+                        class="fa-solid fa-arrow-down"></i> Download CV </a>
+            </div>
+        </div>
+
+    </section>
+    <!------------------- End of About Section ------------------->
+
+    <!------------------- Services Section ------------------->
+    <section class="division services" id="services">
+        <p class="discover">What I Do</p>
+        <h3 class="service heading"> My <span>Services</span></h3>
+
+        <div class="row">
+            <div class="col-2">
+                <i class="fa-solid fa-display"></i>
+                <div>
+                    <span>Frontend Development</span>
+                </div>
+                <p>
+                    I have experience working with HTML, CSS3, JavaScript, and Bootstrap.
+                </p>
+                
+            </div>
+
+            <div class="col-2">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                    <span>Backend Development</span>
+                </div>
+                <p>
+                    Working on Python, Mongo DB Related Projects...
+                </p>
+                <!-- <a href="#">Tap to see...</a> -->
+            </div>
+        </div>
+    </section>
+    <!------------------- End of Services Section ------------------->
+
+    <!------------------- Contact Section ------------------->
+    <section class="division contact" id="contact">
+
+        <h3 class="con heading">Contact <span>Me</span></h3>
+
+        <div class="contact-me">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="email" name="email" id="email" placeholder="Email address" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <textarea name="message" id="message" rows="10" placeholder="Your message" required></textarea>
+            <div class="btn">
+                <a href="#" class="hero-btn contact-btn">Send Message</a>
+            </div>
+        </div>
+
+    </section>
+    <!------------------- End of Contact Section ------------------->
+
+    <!------------------- Footer Section ------------------->
+    <footer>
+        <p>Copyright &copy 2023 - <a href="https://github.com/MartinSilish" target="_blank">Martin Silish</a> - All Rights
+            Reserved</p>
+    </footer>
+
+
+
+    <!------------------- JavaScript (JS) ------------------->
+
+    <!-- Content Effects JS -->
+    <script src="./assets/js/scrollReveal.js"></script>
+
+    <!-- External JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
